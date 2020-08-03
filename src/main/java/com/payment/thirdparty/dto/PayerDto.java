@@ -11,25 +11,25 @@ import java.time.LocalDate;
 @Setter
 public class PayerDto {
 
-    @NotNull
+    @NotNull(message = "'firstName' must not be null!")
     @Size(min = 1, max = 30)
     private String firstName;
 
-    @NotNull
+    @NotNull(message = "'lastName' must not be null!")
     @Size(min = 1, max = 30)
     private String lastName;
 
-    @NotNull
+    @NotNull(message = "'cardNumber' must not be null!")
     @Size(min = 16, max = 16)
     private String cardNumber;
 
-    @NotNull
+    @NotNull(message = "'cardExpiringDate' must not be null!")
     private LocalDate cardExpiringDate;
 
-    @NotNull
+    @NotNull(message = "'cardCvv' must not be null!")
     @Size(min = 3, max = 3)
     private String cardCvv;
 
-    @NotNull
+    @NotNull(message = "'orderValue' must not be null!")
     private Float orderValue;
 }

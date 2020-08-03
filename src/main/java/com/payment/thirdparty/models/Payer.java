@@ -34,7 +34,4 @@ public class Payer {
 
     @Column(name = "account_balance")
     private Float accountBalance;
-
-    @Column(name = "order_value")
-    private Float orderValue;
 }
